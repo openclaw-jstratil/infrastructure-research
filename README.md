@@ -21,6 +21,11 @@ This repository is a dedicated home for infrastructure intelligence that keeps m
 - When the discovery is actionable (runbooks, automation, config snippets), add links to the relevant repo or create a `findings/` folder inside this repo with the full artifact.
 - Always commit research notes alongside the code/config they reference so the story stays together in history.
 
+## Structured notes directory
+
+- `notes/` now contains a template, a README, and example entries that mirror the structure described above.
+- Use `node scripts/lint-notes.js` to enforce that each note includes a `Date`, `Scope`, `Findings`, and `Next steps`, and to flag optional backlinks to mission-control tasks.
+
 ## Example research note: Traefik vs Caddy
 
 | Dimension | Traefik | Caddy |
